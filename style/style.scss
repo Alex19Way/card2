@@ -1,0 +1,144 @@
+/* Global settings*/
+html {font-size: 62.5%;}
+* { 
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {outline: none;}
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+$dark-blue: hsl(217, 54%, 11%);
+$dark-blue2: hsl(216, 50%, 16%);
+$gray-blu: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+body{
+  background-color: $dark-blue;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1 {font-size: 4.5rem;}
+h2 {font-size: 3.8rem;}
+h3 {font-size: 2rem;}
+h4 {font-size: 1.8rem;}
+h5 {font-size: 1rem;}
+h6,p {font-size: 1rem;}
+a {text-decoration: none;}
+
+.container{
+  max-width: 400px;
+  min-width: 1vw;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  margin: 10vh auto;
+  background-color: $dark-blue2;
+  justify-content: space-around;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.slide{
+  max-width: 370px;
+  height: auto;
+  border-radius: 1rem;
+  margin: 0rem auto;
+}
+.slide:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+.view{
+  position: absolute;
+  background-color: transparent;
+  border-radius: 1rem;
+  top: 20%;
+  right: 35%;
+  background-size: cover;
+  cursor: pointer;
+  img{
+    width: 12rem;
+    cursor: pointer;
+  }
+}
+.hide{
+  display: none;
+}
+.slide-title{
+  color: $white;
+  font-size: 1.8rem;
+  margin: 1.5rem 0rem;
+  font-size: 300;
+}
+.slide-title:hover,.user span:hover{
+  color: $cyan;
+  cursor: pointer;
+}
+.slide-desc{
+  color: $soft-blue;
+  font-weight: 100;
+}
+.details{
+  margin: 2rem 0rem;
+  color: $soft-blue;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  .arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h4{
+      color: $cyan;
+      margin: 0rem 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .clock{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+      margin: 0rem 1rem;
+    }
+    h4{
+      font-size: 1.5rem;
+    }
+  }
+}
+.user{
+  margin: 1.5rem 0rem;
+  color: $soft-blue;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  .user-imm{
+    width: 30px;
+    margin-right: 1rem;
+    border: solid 1px $white;
+    border-radius: 2rem;
+  }
+  h4{
+    font-size: 1.5rem;
+  }
+  span{
+    color: $white;
+  }
+}
+
+@media screen and (max-width: 768px){
+  html {font-size: 45%;}
+  .container{max-width: 220px;}
+  .slide{max-width: 190px; margin-top: -0.5rem;}
+  .user,.details,.slide-title{margin: 0.5rem 0rem;}
+  .view img{width: 8rem;}
+}

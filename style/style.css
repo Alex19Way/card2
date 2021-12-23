@@ -1,0 +1,221 @@
+/* Global settings*/
+html {
+  font-size: 62.5%;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #0d192b;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6, p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 400px;
+  min-width: 1vw;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10vh auto;
+  background-color: #14253d;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.slide {
+  max-width: 370px;
+  height: auto;
+  border-radius: 1rem;
+  margin: 0rem auto;
+}
+
+.slide:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.view {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 1rem;
+  top: 20%;
+  right: 35%;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.view img {
+  width: 12rem;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.slide-title {
+  color: white;
+  font-size: 1.8rem;
+  margin: 1.5rem 0rem;
+  font-size: 300;
+}
+
+.slide-title:hover, .user span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.slide-desc {
+  color: #8bacda;
+  font-weight: 100;
+}
+
+.details {
+  margin: 2rem 0rem;
+  color: #8bacda;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.details .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details .arrow h4 {
+  color: #00fff7;
+  margin: 0rem 1rem;
+  font-size: 1.5rem;
+}
+
+.details .clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details .clock img {
+  margin: 0rem 1rem;
+}
+
+.details .clock h4 {
+  font-size: 1.5rem;
+}
+
+.user {
+  margin: 1.5rem 0rem;
+  color: #8bacda;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user .user-imm {
+  width: 30px;
+  margin-right: 1rem;
+  border: solid 1px white;
+  border-radius: 2rem;
+}
+
+.user h4 {
+  font-size: 1.5rem;
+}
+
+.user span {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  .container {
+    max-width: 220px;
+  }
+  .slide {
+    max-width: 190px;
+    margin-top: -0.5rem;
+  }
+  .user, .details, .slide-title {
+    margin: 0.5rem 0rem;
+  }
+  .view img {
+    width: 8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
